@@ -55,7 +55,11 @@ color: transparent white;}
   text-align: center;
 
 }
-
+.img-fluid{
+	width: 200px;
+	transition:width 0.5s ease;
+}
+#portfo:hover img { width:1000px; }
  @media (min-width:992px){
  #sideNav{text-align:center;
  	position:fixed;
