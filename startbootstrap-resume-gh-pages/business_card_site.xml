@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.4
+- https://www.phpmyadmin.net
+-
+- Хост: 127.0.0.1
+- Время создания: Июл 04 2019 г., 14:18
+- Версия сервера: 10.1.37-MariaDB
+- Версия PHP: 7.3.1
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="business_card_site" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="educations">
+                CREATE TABLE `educations` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(255) NOT NULL,
+                  `specialization` varchar(255) NOT NULL,
+                  `profession` varchar(255) NOT NULL,
+                  `start date` varchar(100) NOT NULL,
+                  `end of study` varchar(100) NOT NULL,
+                  `place_of_study_id` tinyint(4) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="interests">
+                CREATE TABLE `interests` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `text` text NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="place_of_study">
+                CREATE TABLE `place_of_study` (
+                  `id` tinyint(4) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(255) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="portfolio">
+                CREATE TABLE `portfolio` (
+                  `id` int(4) NOT NULL AUTO_INCREMENT,
+                  `Project_name` varchar(255) NOT NULL,
+                  `description_of _he_project` text NOT NULL,
+                  `reference_to_the_project` varchar(255) NOT NULL,
+                  `appearance_of_the_project` varchar(255) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="skill">
+                CREATE TABLE `skill` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` text NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="skills">
+                CREATE TABLE `skills` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(255) NOT NULL,
+                  `description` varchar(255) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - База данных: 'business_card_site'
+    -->
+    <database name="business_card_site">
+        <!-- Таблица educations -->
+        <table name="educations">
+            <column name="id">1</column>
+            <column name="name">Инновационный Евразийский Университет</column>
+            <column name="specialization">Среднее специальное</column>
+            <column name="profession">Техник-программист</column>
+            <column name="start date">Сентябрь 2011</column>
+            <column name="end of study">Июнь 2015</column>
+            <column name="place_of_study_id">2</column>
+        </table>
+        <table name="educations">
+            <column name="id">2</column>
+            <column name="name">Омский Государственный Технический Университет</column>
+            <column name="specialization">Бакалавр</column>
+            <column name="profession">Программист</column>
+            <column name="start date">Сентябрь 2016</column>
+            <column name="end of study">Июнь 2020</column>
+            <column name="place_of_study_id">1</column>
+        </table>
+        <!-- Таблица interests -->
+        <table name="interests">
+            <column name="id">1</column>
+            <column name="text">Помимо того, что я студентка, мне нравится проводить время на свежем воздухе. Зимой катаюсь на коньках. В весной и летом, я наслаждаюсь катанием на велосипеде, роликах, лонгборде.</column>
+        </table>
+        <table name="interests">
+            <column name="id">2</column>
+            <column name="text">Находясь дома, я смотрю множество научно-фантастических, комедийных фильмов и сериалов в жанре фэнтези. Интересуюсь техническими новинками. Сейчас изучаю все, что относится к веб-разработке. Раньше моделировала в программе 3d max интерьеры комнат, оборудования.</column>
+        </table>
+        <table name="interests">
+            <column name="id">3</column>
+            <column name="text">In my spare time, and it is extremely rare to read fantasy books</column>
+        </table>
+        <!-- Таблица place_of_study -->
+        <table name="place_of_study">
+            <column name="id">1</column>
+            <column name="name">Университет</column>
+        </table>
+        <table name="place_of_study">
+            <column name="id">2</column>
+            <column name="name">Колледж</column>
+        </table>
+        <!-- Таблица portfolio -->
+        <table name="portfolio">
+            <column name="id">1</column>
+            <column name="Project_name">Справочник гороскопов</column>
+            <column name="description_of _he_project">при выборе гороскопа из файла на экран выводится текст с описанием гороскопа</column>
+            <column name="reference_to_the_project">нету</column>
+            <column name="appearance_of_the_project">img/1.png</column>
+        </table>
+        <table name="portfolio">
+            <column name="id">2</column>
+            <column name="Project_name">База данных Спорт клуб</column>
+            <column name="description_of _he_project">База данных с фреймворком и запросами</column>
+            <column name="reference_to_the_project">https://github.com/Dianazluka/db_sport</column>
+            <column name="appearance_of_the_project">img/2.png</column>
+        </table>
+        <!-- Таблица skill -->
+        <!-- Таблица skills -->
+    </database>
+</pma_xml_export>
