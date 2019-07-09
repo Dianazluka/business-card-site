@@ -13,20 +13,19 @@
 	 				<th>Внешний вид проекта</th>
 	 			</tr>
 	 		</thead>
-
 	 		<tbody>
-	 			<?php  $portfolio = get_portfolio();
-			foreach ($portfolio as $portfoli):?>
-	 			<tr>
-	 				<td><?php echo $portfoli["Project_name"]; ?></td>
-					<td><?php echo $portfoli["description_of _he_project"]; ?></td>
+	 			<?php while ($row = $portfolio->fetch_array()){ ?>
 
-						<td><a href="">	<?php echo $portfoli["reference_to_the_project"]; ?>
+	 			<tr>
+	 				<td><?php echo $row["Project_name"]."<br>"; ?></td>
+					<td><?php echo $row["description_of _he_project"]."<br>"; ?></td>
+
+						<td><a href="">	<?php echo $row["reference_to_the_project"]."<br>"; ?>
 	 					</a>
 	 					</td>
 
 	 				<td>
-	 					<a  id="portfo"><img id="portfo" src="<?php echo $portfoli["appearance_to_the_project"]; ?>" class="img-fluid"></a></td>
+	 					<a  id="portfo"><img id="portfo" src="<?php echo $row["appearance_to_the_project"]; ?>" class="img-fluid"></a></td>
 	 					
 	 		<!--			<a href="img/gor1.png" id="portfo"><img id="portfo" src="img/gor1.png" class="img-fluid"></a>
 	 					</td>-->
@@ -47,7 +46,7 @@
 	 					
 	 				</td>
 	 			</tr>-->
-	 		</tbody><?php endforeach;?>
+	 		</tbody> <?php } ?>
 	 	</table>
-</div>        
+</div>       
 </section>

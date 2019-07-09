@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
 - phpMyAdmin XML Dump
 - version 4.8.4
 - https://www.phpmyadmin.net
 -
 - Хост: 127.0.0.1
-- Время создания: Июл 04 2019 г., 14:18
+- Время создания: Июл 08 2019 г., 08:35
 - Версия сервера: 10.1.37-MariaDB
 - Версия PHP: 7.3.1
 -->
@@ -50,22 +50,14 @@
                   `reference_to_the_project` varchar(255) NOT NULL,
                   `appearance_of_the_project` varchar(255) NOT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
             </pma:table>
             <pma:table name="skill">
                 CREATE TABLE `skill` (
                   `id` int(11) NOT NULL AUTO_INCREMENT,
                   `name` text NOT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-            </pma:table>
-            <pma:table name="skills">
-                CREATE TABLE `skills` (
-                  `id` int(11) NOT NULL AUTO_INCREMENT,
-                  `name` varchar(255) NOT NULL,
-                  `description` varchar(255) NOT NULL,
-                  PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
             </pma:table>
         </pma:database>
     </pma:structure_schemas>
@@ -119,7 +111,7 @@
         <table name="portfolio">
             <column name="id">1</column>
             <column name="Project_name">Справочник гороскопов</column>
-            <column name="description_of _he_project">при выборе гороскопа из файла на экран выводится текст с описанием гороскопа</column>
+            <column name="description_of_he_project">при выборе гороскопа из файла на экран выводится текст с описанием гороскопа</column>
             <column name="reference_to_the_project">нету</column>
             <column name="appearance_of_the_project">img/1.png</column>
         </table>
@@ -130,7 +122,25 @@
             <column name="reference_to_the_project">https://github.com/Dianazluka/db_sport</column>
             <column name="appearance_of_the_project">img/2.png</column>
         </table>
+	<table name="portfolio">
+            <column name="id">3</column>
+            <column name="Project_name">Приложение калькулятор на С# и Java</column>
+            <column name="description_of _he_project">Операясь на методичку и сайты сделать приложение калькулятор, и провести тестирование на ошибки которые могут появится во время работы</column>
+            <column name="reference_to_the_project">https://github.com/Dianazluka/CalcDoDies</column>
+            <column name="appearance_of_the_project">img/3.png</column>
+        </table>
         <!-- Таблица skill -->
-        <!-- Таблица skills -->
+        <table name="skill">
+            <column name="id">1</column>
+            <column name="name">Работа с базами данными</column>
+        </table>
+        <table name="skill">
+            <column name="id">2</column>
+            <column name="name">Написания мелких программ</column>
+        </table>
+        <table name="skill">
+            <column name="id">4</column>
+            <column name="name">Моделировать в программе 3d max</column>
+        </table>
     </database>
 </pma_xml_export>

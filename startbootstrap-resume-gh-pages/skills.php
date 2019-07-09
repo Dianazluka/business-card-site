@@ -1,3 +1,4 @@
+<?php require 'db.php'; ?>
 <hr class="m-0">
 
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
@@ -50,16 +51,18 @@
  <div class="progress ">
   <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" >Вот, что то знаю, но не все </div>
 </div>
-<p></p>
-				<div class="subheading mb-3">Умения</div>
-				<?php  $skill = get_skill();
-			foreach ($skill as $skil):?>
-				<ul class="fa-ul mb-0">
+<p></p>   
+<br>
+				<div class="subheading mb-3">Умения</div><?php while ($row = $skill->fetch_array()){ ?>
+			<table>
+						
+					<ul class="fa-ul mb-0">
+
 					<li>
 						<i class="fa-li fa fa-check"></i>
-					 <?php echo $skil["name"]; ?></li>
+					<?php echo $row["name"] ?>
+				</li>
 					
-					
-				</ul><?php endforeach;?>
+				</ul></table><?php } ?>
 			</div>
 		</section>
