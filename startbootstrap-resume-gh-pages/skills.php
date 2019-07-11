@@ -3,7 +3,7 @@
 
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
 			<div class="w-100">
-				<h2 class="mb-5">Навыки</h2>
+				<h2 class="mb-3">Навыки</h2>
 				
 				<div class="subheading mb-3">Языки программирования </div>
 				<ul class="list-inline dev-icons">

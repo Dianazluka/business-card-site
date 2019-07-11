@@ -39,9 +39,11 @@
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
+
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav">
-				
+					<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="#gallery">Галерея</a>
 				<li class="nav-item">
 					<a class="nav-link js-scroll-trigger" href="#about">О себе</a>
 				</li>
@@ -60,8 +62,15 @@
 				
 			</ul>
 		</div>
+			<audio controls>
+    <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis"  controls="controls">
+    <source src="audio/audio1.mp3" type="audio/mpeg">
+    Тег audio не поддерживается вашим браузером. 
+    <a href="audio/music.mp3">Скачайте музыку</a>.
+  </audio>
 	</nav>
 		<!-- Bootstrap core JavaScript -->
+		
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 

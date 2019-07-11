@@ -1,9 +1,7 @@
-
-	
-
-		<hr class="m-0">
-		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+	<hr class="m-0">
+		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about"> 
 			<div class="w-100">
+			
 				<h2 class="mb-0">Сейтказинова
 				<span class="text-primary">Диана александровна</span>
 				</h2>
@@ -24,20 +22,23 @@
   <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
   <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Можно и лучше </div>
   <div class="progress-bar bg-info" role="progressbar" style="width: 35%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
-<h6>Английский язык</h6>	
+<h6>Английский язык</h6>
 				<div class="progress mb-5">
   <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
   <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Можно и лучше </div>
   <div class="progress-bar bg-info" role="progressbar" style="width: 35%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
+
+
 	 
-				<div class="social-icons mb-5">
-					<a href="#">
+				<div class="social-icons   ">
+					<a href="https://vk.com/di_zluka">
 						<i class="fab fa-vk pr-1"></i>
 					</a>
-					<a href="#">
+					<a href="https://github.com/Dianazluka">
 						<i class="fab fa-github"></i>
 					</a>
-				 </div>
+
+			</div>
 			</div>
 		</section>

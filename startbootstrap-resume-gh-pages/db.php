@@ -14,6 +14,26 @@ $educations = $mysqli->query("SELECT * FROM educations");
 $portfolio = $mysqli->query("SELECT * FROM portfolio");
 $interests = $mysqli->query("SELECT * FROM interests");
 	
+/*
+$query ="CREATE Table tovars
+(
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(200) NOT NULL,
+    company VARCHAR(200) NOT NULL
+)";
+$result = mysqli_query($mysqli, $query);*/
+/*
+$query = "INSERT INTO portfolio 
+VALUES  ('3', 'Приложение калькулятор на С# и Java', 'Операясь на методичку и сайты сделать приложение калькулятор, и провести тестирование на ошибки которые могут появится во время работы', 'https://github.com/Dianazluka/CalcDoDies')";
+$result = mysqli_query($mysqli, $query);
+
+/*
+$query = "INSERT INTO portfolio 
+VALUES ('1', 'Справочник гороскопов', 'при выборе гороскопа из файла на экран выводится текст с описанием гороскопа', 'нету')",
+ ('2', 'База данных Спорт клуб', 'База данных с фреймворком и запросами', 'https://github.com/Dianazluka/db_sport')", 
+ ('3', 'Приложение калькулятор на С# и Java', 'Операясь на методичку и сайты сделать приложение калькулятор, и провести тестирование на ошибки которые могут появится во время работы', 'https://github.com/Dianazluka/CalcDoDies')";
+$result = mysqli_query($mysqli, $query);*/
+
 ///while ($row = $skill->fetch_assoc()){
 
  /// echo $row['name']."<br>";
