@@ -2,19 +2,19 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  height: 400px;
+  height: 500px;
 }
 .mySlide {display: none
 
 }
 .mySlide img{
-width: 200px;
-  height: 400px;
+
+  height: 300px;
 }
 
 /* Slideshow container */
 .slideshowe-containere {
-  max-width: 1000px;
+  max-width: 500px;
   position: relative;
   margin: auto;
 }
@@ -81,6 +81,6 @@ width: 200px;
 
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (min-width: 992px) {
   .preve, .nexte,.texte {font-size: 11px}
 }

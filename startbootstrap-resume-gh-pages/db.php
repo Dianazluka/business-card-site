@@ -15,6 +15,21 @@ $portfolio = $mysqli->query("SELECT * FROM portfolio");
 $interests = $mysqli->query("SELECT * FROM interests");
 	
 /*
+$query = "INSERT INTO educations
+VALUES  ('1', 'Инновационный Евразийский Университет', 'Среднее специальное', 'Техник-программист', 'Сентябрь 2011', 'Июнь 2015'),
+ ('2', 'Омский Государственный Технический Университетт', 'Бакалавр', 'Программист', 'Сентябрь 2016', 'Июнь 2020'),";
+$result = mysqli_query($mysqli, $query);
+
+
+
+
+
+
+
+
+
+
+/*
 $query ="CREATE Table tovars
 (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,

@@ -3,11 +3,18 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="gallery">
   <link rel="stylesheet" href="gallery.css">
 
+   
   
-<div class="slideshow-container">
 
+<div class="slideshow-container">
+<audio controls>
+    <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis"  controls="controls">
+    <source src="audio/audio1.mp3" type="audio/mpeg">
+    Тег audio не поддерживается вашим браузером. 
+    <a href="audio/music.mp3">Скачайте музыку</a>.
+  </audio>
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
+  <div class="mySlides fade ">
     <div class="numbertext">1 / 8</div>
     <img src="gallery/1-1.jpg" style="width:100%">
 
@@ -50,9 +57,9 @@
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
 
+
+ </div>
 <!-- The dots/circles -->
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 

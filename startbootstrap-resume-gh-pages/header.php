@@ -62,13 +62,7 @@
 				
 			</ul>
 		</div>
-			<audio controls>
-    <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis"  controls="controls">
-    <source src="audio/audio1.mp3" type="audio/mpeg">
-    Тег audio не поддерживается вашим браузером. 
-    <a href="audio/music.mp3">Скачайте музыку</a>.
-  </audio>
-	</nav>
+			</nav>
 		<!-- Bootstrap core JavaScript -->
 		
 	<script src="vendor/jquery/jquery.min.js"></script>

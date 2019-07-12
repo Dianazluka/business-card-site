@@ -1,6 +1,6 @@
 <meta charset="utf-8 without BOM">
 <?php require 'db.php'; ?>
-<?php require 'func.php'; ?>
+
 <?php require 'header.php'; ?>
 <div class="container-fluid p-0">
 <?php require 'gallery.php'; ?>
